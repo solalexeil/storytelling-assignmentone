@@ -1,20 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Screen Time Story</title>
+
+    <!-- METADATA GOES HERE -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lifestyle & Habit Tracking Report</title>
     <link href="style.css" rel="stylesheet">
-    <link href="http://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-Tc36CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
-    <script src="http://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.2/lib/p5.min.js"></script>
 
+    <!-- BOOTSTRAP 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyn/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <script src="script.js"></script>
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="chart-script.js"></script>
+
 </head>
 
 <body>
@@ -22,9 +28,20 @@
         <div class="row">
             <div class="col-12">
                 <h1>The Screen Time Chronicles: A Journey Through My Digital Habits</h1>
-                <p>In a world where our lives are increasingly intertwined with digital devices, I decided to embark on a journey to understand my relationship with my phone. 
-                    Armed with screen time tracking tools, I set out to uncover the patterns, habits, and perhaps even the hidden truths behind my daily screen usage.
-                    What started as a simple curiosity soon turned into a fascinating exploration of my digital life.</p>
+
+                <p> Having the ability to constantly track the way we live, has been something that I think everyone if not most people have accepted.
+                    I myself, have been recording my habits or steps or intake in some form, for years now. It started off with tracking your steps to see how many did that 
+                    day or week or even comparing against your friends. Eventually, that shifted fully into Apple Watches, FitBits or Oura Rings, just to name a few. It was and is 
+                    a method of staying on track and being aware of your performance and health overtime. Not to mention, it has also became a tool for others to use daily, such as healthcare professionals 
+                    to elderly people. 
+
+                <p> Not to sound selfish but this is mainly about myself and how I've tracked my cellphone use over a period of time. 
+                    I tracked specific categories for a month, and I was able to understand my daily habits. I think it is important to know your daily habits or routines, 
+                    so if there is something that can be changed or improved, you are able to see the data on a visual chart and make the necessary changes that suit you.
+                    As for predictions of what I thought my screen time would be, I was not too surprised by what I found!
+                    As a design student and someone who is always staring at a screen, it did not surprise me at all that my screen time was higher in some areas than others. 
+                    I created some charts below that display my habits that I found during this time!</p>
+
             </div>
         </div>
     </div>
@@ -34,84 +51,81 @@
             <div class="col-12">
                 <div class="card text-center">
                     <div class="card-body">
-                        <h2>Where is this data from?</h2>
-                        <p>For one month, I constantly tracked my screen time, then organizing each session into different categories:
-                        Social Media, Entertainment, Productivity and Other. The data that I gathered using my phone's built-in tracker.
-                        Being able to have access to this extensive data allowed me to analyze my screen time habits and patterns, 
-                        and see where all the time has gone.</p>
+                        <h1>Where is this data from?</h1>
+                    
+                        <p> After not paying too much attention to the trackers in my phone, I thought this would be the perfect time to try it out and see if 
+                            was as crazy as I thought. I decided to organize all the activity into categories, so that would be easily understood! Social Media, Entertainment, 
+                            Productivity & Health, were the four sections that are apart of my daily life. Although I don't remember giving my phone access to let it track this information
+                        (I'm pretty sure that I agreed to it a while ago or when I first got the phone - hahaha) </p>
+
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="text-center">Social Media</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="text-center">Entertainment</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="text-center">Productivity</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="text-center">Health</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+      
+    <br>      
 
-<div class="container my-5">
-    <div class="row">
-        <div class="col-12">
-            <div class="card text-center">
-                <div class="card-body">
-                    <p>The first step was to gather all the data I needed. 
-                        After ignoring my phone's screen time tracker for years, this was the time to pay more attention to it. 
-                        Everyday I monitored my screen time, and organized them in their own categories: Social Media, Entertainment, Productivity and Other.
-                        Although I do not remember letting them have this data (I am sure I agreed to it at some point), as time went on I grew to appreciate it.
-                        When it came down to it, I was able to see how much time I spent on my phone, and where all that time went. 
-                        These numbers proved to me that I have more phone habits than I thought I did. Boredom? Stress? Inflation? Anxiety? (or all at the same time!)
-                        No wonder I was always tired. I was always on my phone.
-                        Now it's time to really display this data so I can get it together!</p>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h1>Tracking Categories</h1>
+                <div>
+                    <canvas id="myPieChart"></canvas>
                 </div>
+                <script>    
+                    const pieCtx = document.getElementById('myPieChart');
+                    new Chart(pieCtx, {
+                        type: 'pie',
+                        data: {
+                            labels: ['Social Media', 'Entertainment', 'Health', 'Productivity'],
+                            datasets: [{
+                                label: '% of Time Spent on Phone by Category',
+                                data: [45, 25, 10, 20],
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                legend: {
+                                    position: 'bottom',
+                                },
+                            }
+                        }
+                    });
+                </script>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container my-5">
-    <div class="row">
-        <div class="col-12">
-            <div class="card text-center">
-                <div class="card-body">
-                    <p>fill text story here</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container my-5">
-    <div class="row">
-        <div class="col-12">
-            <div class="card text-center">
-                <div class="card-body">
-                    <p>second text fill here</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container my-5">
-    <div class="row">
-        <div class="col-12">
-            <div class="card text-center">
-                <div class="card-body">
-                    <p>fill with info again.</p>
-                </div>            
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container my-5">
-    <div class="row">
-        <div class="col-12">
-            <div class="card text-center">
-                <div class="card-body">
-                    <p>Concluding text here fill/ can also be a call to action text.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 </body>
 
