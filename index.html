@@ -19,7 +19,9 @@
     <!-- JQUERY -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="chart-script.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
 
 </head>
 
@@ -28,6 +30,8 @@
         <div class="row">
             <div class="col-12">
                 <h1>The Screen Time Chronicles: A Journey Through My Digital Habits</h1>
+                
+<br>
 
                 <p> Having the ability to constantly track the way we live, has been something that I think everyone if not most people have accepted.
                     I myself, have been recording my habits or steps or intake in some form, for years now. It started off with tracking your steps to see how many did that 
@@ -93,39 +97,55 @@
       
     <br>      
 
-    <div class="container my-5">
+    <div class="container my-7">
         <div class="row">
-            <div class="col-12">
+            <div class="col-md-6">
                 <h1>Tracking Categories</h1>
-                <div>
-                    <canvas id="myPieChart"></canvas>
-                </div>
-                <script>    
-                    const pieCtx = document.getElementById('myPieChart');
-                    new Chart(pieCtx, {
-                        type: 'pie',
-                        data: {
-                            labels: ['Social Media', 'Entertainment', 'Health', 'Productivity'],
-                            datasets: [{
-                                label: '% of Time Spent on Phone by Category',
-                                data: [45, 25, 10, 20],
-                                borderWidth: 1
-                            }]
-                        },
-                        options: {
-                            responsive: true,
-                            plugins: {
-                                legend: {
-                                    position: 'bottom',
-                                },
-                            }
-                        }
-                    });
-                </script>
+                <canvas id="myPieChart"></canvas>
+            </div>
+            <div class="col-md-4">
+                <h1>Usage Details</h1>
+                
+                <p>This chart highlights the usage of these sections throughout the month. 
+                    Social media was by far the highest of my usage, following entertainment, then productivity and finally health. (woah)
+                    I think it's safe to say that althought my productivity and entertainment are equal, these habits alone
+                    show me that I use social media as somewhat as an outlet to escape from the world.</p>
             </div>
         </div>
     </div>
 
+<div class="container my-7">
+    <div class="row">
+        <div class="col-md-6">
+            <h1>Physical Acitivty</h1>
+            <canvas id="mySecondPieChart" width="400" height="200"></canvas>
+        </div>
+        <div class="col-md-4">
+            <h2>Usage Details</h2>
+
+            <p>This chart highlights the amount of steps or physical activity. Being in Toronto, you pretty much walk everywhere you have to go, especially
+            if you live downtown (which I do). The collection of steps although are consistent they do show an area for improvement.
+            With that being said, I think it's safe to say that phsycial acitivty shouldn't be ignored or neglected as it is very important to your health!</p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="card text-center">
+                <div class="card-body">
+                    <h1>Conclusion</h1>
+                
+                    <p>So what now? The charts shows me all the data I can possibly have to resolve and kinks in my lifestyle.
+                        Physical activity is crucial to your health and the quality of your life. Being healthy should be a priority, and I think that this data
+                        has shown me that I need to make some changes in my daily routine.
+                        However, it does show a more realistic perspective of what every day or every week may look like for the average person.
+                        I will try to reduce my screen time on social media and entertainment and try to focus more on productivity and health.
+                    </p>
+
+
+<script src="script.js"></script>
 
 </body>
 
